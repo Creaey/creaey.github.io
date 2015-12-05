@@ -206,7 +206,7 @@ a {
   position: absolute;
   width: 100%;
   background: #3c3c3c;
-  border-bottom: #00c0ec solid 4px;
+  border-bottom: #00c0ec solid 2px;
 }
 #container #mobile-nav .overlay.fixed {
   position: fixed;
@@ -249,7 +249,7 @@ a {
   height: 180px;
   background-color: #3c3c3c;
   position: absolute;
-  border-bottom: #00c0ec solid 4px;
+  border-bottom: #00c0ec solid 3px;
 }
 #container .left-col .intrude-less {
   width: 76%;
@@ -611,10 +611,10 @@ a {
 }
 #header .header-nav .social a.weibo {
   background: url("/img/weibo.png") center no-repeat #aaf;
-  border: 1px solid #aaf;
+  border: 1px solid #ff5353;
 }
 #header .header-nav .social a.weibo:hover {
-  border: 1px solid #aaf;
+  border: 1px solid #ff5353;
 }
 #header .header-nav .social a.rss {
   background: url("/img/rss.png") center no-repeat #ef7522;

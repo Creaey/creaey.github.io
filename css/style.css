@@ -594,6 +594,7 @@ a {
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
+  opacity: 0.7;
   text-indent: -9999px;
   margin: 0 8px 15px 8px;
   width: 28px;

@@ -205,8 +205,7 @@ a {
   height: 110px;
   position: absolute;
   width: 100%;
-  background: #3c3c3c;
-  border-bottom: #00c0ec solid 4px;
+  background: #4d4d4d;
 }
 #container #mobile-nav .overlay.fixed {
   position: fixed;
@@ -247,9 +246,9 @@ a {
 #container .left-col .overlay {
   width: 100%;
   height: 180px;
-  background-color: #3c3c3c;
+  background-color: #000;
   position: absolute;
-  border-bottom: #00c0ec solid 4px;
+  opacity: 0.7;
 }
 #container .left-col .intrude-less {
   width: 76%;
@@ -483,10 +482,10 @@ a {
   width: 100%;
 }
 #header a {
-  color: #333;
+  color: #696969;
 }
 #header a:hover {
-  color: #999;
+  color: #b0a0aa;
 }
 #header .profilepic {
   text-align: center;
@@ -926,7 +925,7 @@ a {
   color: #c8c8c8;
 }
 .article-title {
-  color: #333;
+  color: #696969;
   margin-left: 0px;
   font-weight: 300;
   line-height: 35px;
@@ -941,7 +940,7 @@ a {
   transition: color 0.3s;
 }
 .article-title:hover {
-  color: #999;
+  color: #b0a0aa;
 }
 .article-inner {
   position: relative;
@@ -1132,7 +1131,7 @@ a {
   text-align: right;
 }
 .article-more-link a {
-  background: #3c3c3c;
+  background: #4d4d4d;
   color: #fff;
   font-size: 12px;
   padding: 2px 8px 4px;
@@ -1185,10 +1184,10 @@ a {
   transition: background 0.3s;
 }
 #article-nav .article-nav-link-wrap:hover strong {
-  background: #3c3c3c;
+  background: #4d4d4d;
 }
 #article-nav .article-nav-link-wrap:hover .article-nav-title {
-  color: #3c3c3c;
+  color: #4d4d4d;
 }
 #article-nav #article-nav-older {
   float: right;
@@ -1684,7 +1683,7 @@ pre .css ~ * .id {
   background: #88acdb;
 }
 #page-nav .extend {
-  color: #3c3c3c;
+  color: #4d4d4d;
   margin: 0 27px;
   opacity: 0;
 }
@@ -1863,7 +1862,7 @@ pre .css ~ * .id {
   top: 0;
   left: 0;
   border-style: solid;
-  border-color: transparent transparent #3c3c3c transparent;
+  border-color: transparent transparent #4d4d4d transparent;
   border-width: 0 16px 14px;
 }
 .switch-btn .icon-ctn .birdhouse:after {
@@ -1872,7 +1871,7 @@ pre .css ~ * .id {
   top: 12px;
   left: -12px;
   border-style: solid;
-  border-color: #3c3c3c transparent transparent transparent;
+  border-color: #4d4d4d transparent transparent transparent;
   border-width: 100px 12px;
 }
 .switch-btn .icon-ctn .birdhouse_holes {

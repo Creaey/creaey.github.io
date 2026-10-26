@@ -55,6 +55,16 @@
     </main>
     <footer>留一点时间给音乐 · POCKET PIANO PRACTICE</footer>
   </div>
+  <div class="metronome-dock" role="group" aria-label="全页节拍器">
+    <div class="metronome-main">
+      <span id="metronome-pulse" class="metronome-pulse" aria-hidden="true"></span>
+      <span class="metronome-title">节拍器</span>
+      <label class="metronome-speed" for="metronome-bpm"><span>BPM</span><input id="metronome-bpm" type="number" inputmode="numeric" min="20" max="300" step="1" value="80" aria-label="节拍器速度，BPM"></label>
+      <button id="metronome-toggle" class="metronome-toggle" type="button" aria-pressed="false">▶ 开始</button>
+    </div>
+    <label class="metronome-volume" for="metronome-volume"><span>音量</span><input id="metronome-volume" type="range" min="0" max="100" step="1" value="60" aria-label="节拍器音量"><output id="metronome-volume-value" for="metronome-volume">60%</output></label>
+    <span id="metronome-status" class="sr-only" role="status">节拍器已停止</span>
+  </div>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <script src="app.js"></script>
 </body>

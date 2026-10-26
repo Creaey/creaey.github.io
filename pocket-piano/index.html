@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f2e9">
+  <meta name="description" content="25 键口袋琴练习：随机音符、音组、视奏和听奏。">
+  <title>口袋琴练习室</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <div class="brand-name">口袋琴 <span>练习室</span></div>
+      <div class="top-note" id="tuning-status">25 键 · 校准后按实际音高</div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="eyebrow">POCKET PIANO / DAILY PRACTICE</div>
+          <h1>每天一点，<em>听见进步。</em></h1>
+          <p>从认识音符到听音演奏，把练习变成一段轻松的小节。</p>
+        </div>
+        <div class="hero-decoration" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      </section>
+
+      <div class="notation-row"><span>记谱方式</span><div class="notation-switch" role="group" aria-label="记谱方式"><button type="button" data-notation="number" aria-pressed="true">简谱 · 1 2 3</button><button type="button" data-notation="letter" aria-pressed="false">音名 · C D E</button></div><small>字母音名的八度随校准更新</small></div>
+      <nav class="mode-nav" aria-label="练习模式">
+        <button class="mode-tab active" data-mode="notes" aria-current="page"><span>01</span> 随机音符</button>
+        <button class="mode-tab" data-mode="groups"><span>02</span> 随机音组</button>
+        <button class="mode-tab" data-mode="sight"><span>03</span> 视奏练习</button>
+        <button class="mode-tab" data-mode="ear"><span>04</span> 听奏练习</button>
+      </nav>
+
+      <div class="workspace">
+        <section class="practice-card" aria-live="polite">
+          <div class="card-header">
+            <div><div class="section-kicker" id="mode-kicker">01 / 认识音符</div><h2 id="mode-title">随机 8 个音符</h2><p id="mode-description">看着音符，在琴上找到对应的键。</p></div>
+            <button id="generate-button" class="outline-button" type="button">↻ 重新抽取</button>
+          </div>
+          <div id="mode-content"></div>
+        </section>
+
+        <aside class="sidebar">
+          <section class="keyboard-card">
+            <div class="aside-title"><span class="small-icon">♫</span><div><h2>25 键音位图</h2><p>点按音符可试听</p></div></div>
+            <div id="keyboard" class="keyboard" aria-label="口袋琴 25 键"></div>
+            <div class="keyboard-legend"><span><i class="legend-natural"></i> 自然音</span><span><i class="legend-sharp"></i> 升音</span></div>
+          </section>
+          <section class="tip-card"><div class="tip-heading">练习提示 <span>✦</span></div><p id="tip-text">先慢慢找到每个音的位置，再逐渐加快速度。点按右侧音位图，也可以先听一听。</p></section>
+        </aside>
+      </div>
+    </main>
+    <footer>留一点时间给音乐 · POCKET PIANO PRACTICE</footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>

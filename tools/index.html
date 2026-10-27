@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="把自己做过的小工具放在一个地方。搜索、收藏并直接打开音乐、学习与趣味工具。">
+  <title>我的小工具 · Creaey</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="catalog.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="shell" id="index-view">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="我的小工具首页"><span class="brand-mark" aria-hidden="true">C.</span><span>MY TOOLBOX <small>我的小工具</small></span></a>
+      <a class="repo-link" href="https://github.com/Creaey/creaey.github.io" target="_blank" rel="noopener noreferrer">GitHub 仓库 <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="live-dot" aria-hidden="true"></span> PERSONAL TOOL INDEX / 001</div>
+          <h1 id="page-title">我的<span>小工具</span></h1>
+          <p>把做过的练习与实验放在一起。想到什么，就从这里打开继续用。</p>
+          <div class="hero-meta"><span><strong id="total-count">0</strong> 个工具</span><span class="meta-divider"></span><span>一个随手可用的入口</span></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-grid"><span>♫</span><span>▦</span><span>文</span><span>✦</span></div>
+          <div class="art-caption">collect / find / open</div>
+        </div>
+      </section>
+
+      <section class="finder" aria-label="查找工具">
+        <div class="finder-top"><div><span class="section-index">01 / FIND</span><h2>找一个工具</h2></div><p>搜索名称、用途或标签</p></div>
+        <label class="search-box"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">搜索工具</span><input id="search-input" type="search" placeholder="试试搜索：口袋琴、排序、测验…" autocomplete="off"><kbd>/</kbd></label>
+        <div class="filter-row"><div class="filters" id="category-filters" role="group" aria-label="按类别筛选"></div><span class="result-count" id="result-count" aria-live="polite"></span></div>
+      </section>
+
+      <section class="library" aria-labelledby="library-title">
+        <div class="library-heading"><div><span class="section-index">02 / LIBRARY</span><h2 id="library-title">工具收藏夹</h2></div><p>点击卡片，在这里直接打开</p></div>
+        <div class="tool-grid" id="tool-grid"></div>
+        <div class="empty-state" id="empty-state" hidden><span aria-hidden="true">⌕</span><h3>暂时没有找到</h3><p>换个关键词，或者切换工具类别。</p><button id="reset-filters" type="button">查看全部工具</button></div>
+      </section>
+    </main>
+
+    <footer><span>CREAEY / PERSONAL TOOLBOX</span><span>把这个页面加入手机主屏幕，下次打开更方便。</span></footer>
+  </div>
+
+  <section class="viewer" id="viewer" aria-label="工具预览" hidden>
+    <header class="viewer-bar"><button class="back-button" id="close-viewer" type="button"><span aria-hidden="true">←</span> 返回工具索引</button><div class="viewer-identity"><span id="viewer-icon" aria-hidden="true"></span><div><strong id="viewer-title"></strong><small id="viewer-category"></small></div></div><a id="open-direct" target="_blank" rel="noopener noreferrer">单独打开 <span aria-hidden="true">↗</span></a></header>
+    <iframe id="tool-frame" title="工具预览" allow="microphone; autoplay" loading="eager"></iframe>
+  </section>
+</body>
+</html>
